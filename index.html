@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>onboarding</title>
+    </title>
 </head>
 <body>
     <h1 style="font-size: 7ch;">누구세요?</h1>
@@ -23,11 +24,15 @@
     
     
     <script>
-     function welcome() {
-        const name = document.getElementById("name").value;
-     alert("환영합니다 " + name + " 님");
-     location.href = "home.html";
+  function welcome() {
+    const name = document.getElementById("name").value;
+    if (name === "") {
+      alert("이름을 입력해 주세요");
+    } else {
+      alert("환영합니다 " + name + " 님");
+      location.href = "home.html";
     }
-    </script>
+  }
+</script>
 </body>
 </html>
