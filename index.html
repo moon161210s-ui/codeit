@@ -6,10 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="font-size: 150px;">hello world</h1>
-    <a href="test/test.html">연정콩 레전드 보러 가기</a>
-    <a href="test/test2.html">초급 프로젝트 보러 가기</a>
-    <a href="test/test3.html">중급 프로젝트 보러 가기</a>
-    <a href="test/test4.html">고급 프로젝트 보러 가기</a>
+    <h1 style="font-size: 7ch;">누구세요?</h1>
+    <p><label for="name">이름</label></p>
+    <input type="text" id="name" placeholder="이름을 입력해 주세요">
+        <style>
+         input {
+              width: 300px;
+             height: 40px;
+                padding: 0 12px;
+             font-size: 16px;
+             border: 1px solid #ccc;
+             border-radius: 12px;
+              box-sizing: border-box;}
+        </style>
+    <button onclick="welcome()">확인</button>
+    
+    
+    <script>
+    function welcome() {
+    const name = document.getElementById("name").value;
+    alert("환영합니다 " + name + " 님");}
+    location.href = "home.html";
+    </script>
 </body>
 </html>
