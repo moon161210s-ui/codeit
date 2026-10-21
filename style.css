@@ -1,0 +1,15 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  color: #222;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+h1 {
+  color: #08BCEE;
+}
