@@ -29,6 +29,9 @@
     const name = document.getElementById("name").value;
     if (name === "") {
       alert("이름을 입력해 주세요");
+    } else if (name === "재히") {
+      alert("비밀 공간으로 이동합니다");
+      location.href = "jae.html";
     } else {
       alert("환영합니다 " + name + " 님");
       location.href = "home.html";
